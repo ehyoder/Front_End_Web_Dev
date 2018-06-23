@@ -60,6 +60,38 @@ def home():
 def viz_1():
     return render_template("visualization_1.html")
 
+@app.route("/visualization_2")
+def viz_2():
+    return render_template("visualization_2.html")
+
+@app.route("/visualization_3")
+def viz_3():
+    return render_template("visualization_3.html")
+
+@app.route("/index.html")
+def dashboard_home():
+    return render_template("index.html")
+
+@app.route("/group.html")
+def group():
+     return render_template("group.html")
+
+@app.route("/abstract.html")
+def abstract():
+     return render_template("abstract.html")
+
+@app.route("/data.html")
+def data():
+     return render_template("data.html")
+
+@app.route("/references.html")
+def references():
+     return render_template("references.html")
+
+@app.route("/glossary.html")
+def glossary():
+    return render_template("glossary.html")
+
 @app.route("/statelist")
 def statelist():
     listofstates=[]
